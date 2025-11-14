@@ -45,7 +45,38 @@
       padding: 0;
     }
     
+      /* Make nav-meta menu smaller */
+      .nav-meta__list {
+        font-size: 0.95em;
+      }
+      .nav-meta__item {
+        padding: 0.2em 0.5em;
+      }
+      .nav-meta__link {
+        font-size: 0.95em;
+        padding: 0.2em 0.5em;
+      }
+      .header__meta {
+        font-size: 0.95em;
+      }
     /* Mobile Optimization für filmuni-proudly-presents */
+        /* Make nav-meta menu items inline and wrap */
+        .nav-meta__list {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 0.5em;
+          padding-left: 0;
+          margin: 0;
+          list-style: none;
+        }
+        .nav-meta__item {
+          display: inline-flex;
+          align-items: center;
+          margin: 0;
+        }
+        .nav-meta__link {
+          white-space: nowrap;
+        }
     @media only screen and (max-width: 49.99em) {
       h1 {
         font-size: 2.2rem !important;
@@ -57,10 +88,10 @@
         font-size: 1.3rem !important;
       }
       p {
-        font-size: 1.25rem !important;
+        font-size: 1rem !important;
       }
       .intro__text {
-        font-size: 1.3rem !important;
+        font-size: 1.1rem !important;
       }
       .header__logo {
         width: 100% !important;
